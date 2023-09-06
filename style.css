@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    color: azure;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#purple{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #EDBFFF;
+    display: none;
+    transition: opacity ease 1s;
+    opacity: 0; 
+    /* z-index: 100; */
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: left linear 0.3s top linear 0.3s;
+}
+.main{
+    background-color: #0f0d0d;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    background-color:brown; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    top: 0px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+    
+}
+#nav img{
+    height: 26px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+#nav-part3 #circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: rgb(231, 36, 231);
+}
+#nav-part2 h4{
+    font-size: 17px;
+    text-transform:uppercase ;
+    font-weight: 500;
+   
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid white;
+}
+.page1 h2{
+   font-size: 7vw;
+   font-weight: 500;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 10vw;
+   margin-left: 7vw;
+}
+.page1 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 17vw ;
+}
+.page1 video{
+    width: 70%;
+    margin-top: 10vw;
+    position: relative; 
+    object-fit: cover;
+    src:url("https://duo-studio.co/assets/home/Duo%20Reel--Desktop-reduced.mp4");
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+
+}
+.page2{
+    min-height: 130vh;
+    width: 100%;
+    margin: 100px 0;
+    border-bottom: 2px solid #150909;
+    position: relative;
+    z-index: 9;
+}
+.page2 h1{
+    font-size: 4vw;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:brown;
+}
+.page2-left{
+    /* background-color: blue; */
+    width: 38%;
+}
+.page2-right{
+    /* background-color: blue; */
+    width: 28%;
+    padding-right: 20px;
+
+}
+.page2-left h2{
+    font-size: 4vw;
+    font-weight: 300;
+}
+.page2-right p{
+    font-size: 28px;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    /* padding: 4px 0 ; */
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20px;
+}
+.page3{
+    width: 100%; 
+    position: relative;
+    z-index: 9;
+}
+.page3 h3{
+    font-size: 6.5vw;
+    font-weight: 300%;
+    color:azure;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3 img{
+    height: 500px;
+    margin-top: 107px;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.text-div{
+    height: 120px;
+    overflow: hidden;
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+    left:10%;
+}
+.elem img:nth-child(3){
+   right: 20%;
+}
+.elem h1{
+    font-size: 7vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    background-color: #0f0d0d;
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+   position: relative;
+   z-index: 9;
+   padding: 140px 100px;
+   align-items: center;
+   
+}
+.page5 .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid azure;
+    opacity: 0.8;
+    height: 70px;
+    padding: 0 20px;
+    
+
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom:50px ;
+}
+.box h3{
+    font-size: 3vw;
+    font-weight: 500;
+}
+.box:nth-child(5){
+    border-bottom: 2px solid azure;
+}
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-color:#EDBFFF;
+   
+}
+.footer-part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid white;
+}
+.footer-part1 h2{
+    font-size: 5vh;
+    font-weight: 700;
+    color: #0f0d0d;
+    text-transform: uppercase;
+}
+.circle_btn{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle_btn a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    margin: 10px 5px;
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+.footer-part2{
+    height: 100%;
+    width: 100%;
+    padding:100px 50px;
+}
+.footer-part2 h4{
+   font-size: 6vh;
+   font-weight: 500;
+   margin-top: 20px;
+}
+.footer-part h3{
+   color: #150909;
+    font-size: 3vw;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+/* @media(prefer-reduced-motion: no-preference){
+   html{
+    scroll-behavior: smooth;
+   }
+} */
